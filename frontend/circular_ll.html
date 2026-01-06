@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeVerse | Circular Linked List</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-screen-container">
+        <a href="landing.html" class="back-nav">
+            <div class="back-circle"><span class="arrow-symbol">←</span></div>
+            <span class="back-text">Back</span>
+        </a>
+
+        <div class="hero-header">
+            <h1 class="main-title">Circular Linked List</h1>
+        </div>
+
+        <div class="main-layout">
+            <div class="visualizer-part">
+                <div id="visual-area" class="visual-area"></div>
+                <div class="glass-controls">
+                    <div class="control-row">
+                        <input type="number" id="nodeValue" placeholder="Value">
+                        <button class="btn btn-primary" onclick="insertHead()">Insert Head</button>
+                        <button class="btn btn-primary" onclick="insertTail()">Insert Tail</button>
+                        <button class="btn btn-danger" onclick="clearAll()">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-sidebar">
+                <h3 id="algo-title">Algorithm Steps</h3>
+                <div id="code-sidebar-content">
+                    <p>// Circular List connects Tail to Head.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../logic/circularLinkedList.js"></script>
+    <script src="../logic/circularVisuals.js"></script>
+    <script src="../logic/circularScript.js"></script>
+    
+</body>
+</html>

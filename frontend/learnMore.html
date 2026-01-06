@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeVerse | Mastering Linked Lists</title>
+   
+    <link rel="stylesheet" href="learnMore.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-screen-container">
+        <a href="landing.html" class="back-nav">
+            <div class="back-circle">←</div>
+           
+        </a>
+
+        <header class="guide-header">
+            <h1 class="main-title">What is a Linked List?</h1>
+            <p class="subtitle">Think of a Linked List as a series of connected train cars. Instead of being stored in one big block of memory, each piece of data points to the next, allowing for a dynamic and flexible structure.</p>
+        </header>
+
+        <main class="guide-grid">
+            <section class="concept-panel">
+                <div class="panel-header">
+                    <span class="step-num">01</span>
+                    <h2>The Building Block: The Node</h2>
+                </div>
+                <p>Every Linked List is made of <strong>Nodes</strong>. A Node is a simple container with two essential parts:</p>
+                <ul class="feature-list">
+                    <li><strong>Data:</strong> The actual information you want to store (like a number or string).</li>
+                    <li><strong>Pointer:</strong> The memory address that tells the computer where the next "car" in the train is located.</li>
+                </ul>
+            </section>
+
+            
+
+            <div class="types-header">
+                <h2>Understanding the Three Variations</h2>
+            </div>
+
+            <section class="types-grid">
+                <div class="type-card">
+                    <div class="type-badge">Linear</div>
+                    <h3>Singly Linked List</h3>
+                    <p>The simplest form. Each node points only to the <strong>next</strong> node. Navigation is strictly one-way—forward only.</p>
+                    <div class="use-case">Example: A simple "Undo" stack.</div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-badge">Bidirectional</div>
+                    <h3>Doubly Linked List</h3>
+                    <p>Features two pointers: <strong>Next</strong> and <strong>Previous</strong>. This allows you to traverse the list in both directions with ease.</p>
+                    <div class="use-case">Example: Browser "Back" and "Forward" buttons.</div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-badge">Looping</div>
+                    <h3>Circular Linked List</h3>
+                    <p>The last node’s pointer doesn't lead to null; it points back to the <strong>Head</strong>. This creates an endless loop.</p>
+                    <div class="use-case">Example: A Music Player's "Repeat All" feature.</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

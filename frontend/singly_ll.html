@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeVerse | Linked List Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="full-screen-container">
+        <a href="landing.html" class="back-nav">
+        <div class="back-circle">
+            <span class="arrow-symbol">←</span>
+        </div>
+
+    </a>
+        <div class="hero-header">
+            <h1 class="main-title">Singly Linked List</h1>
+        </div>
+
+        <div class="main-layout">
+            <div class="visualizer-part">
+                <div id="visual-area" class="visual-area">
+                    </div>
+                
+                <div class="glass-controls">
+                    <div class="control-row">
+                        <input type="number" id="nodeValue" placeholder="Value">
+                        <button class="btn btn-primary" onclick="insertAtHead()">Insert Head</button>
+                        <button class="btn btn-primary" onclick="insertAtTail()">Insert Tail</button>
+                        <button class="btn btn-danger" onclick="deleteNode()">Delete Value</button>
+                        <button class="btn btn-secondary" onclick="searchNode()">Search</button>
+                    </div>
+                    
+                    <div class="control-row">
+                        <input type="number" id="nodeIndex" placeholder="Index">
+                        <button class="btn btn-secondary" onclick="insertAtPosition()">Insert at Index</button>
+                        <button class="btn btn-warning" onclick="reverseList()">Reverse List</button>
+                        <div class="speed-container">
+                            <label>Speed</label>
+                            <input type="range" id="speedSlider" min="0" max="1000" value="500">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-box">
+                    <span class="status-dot"></span>
+                    <p id="status-text">Status: Ready</p>
+                </div>
+            </div>
+
+            <div class="code-sidebar">
+                <h3 id="algo-title">Algorithm Steps</h3>
+                <div id="code-sidebar-content">
+                    <p class="gray-text">// Select an operation to see the logic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../logic/linkedList.js"></script>
+    <script src="../logic/visuals.js"></script>
+    <script src="../logic/script.js"></script>
+    
+</body>
+</html>

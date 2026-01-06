@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeVerse - Data Structures</title>
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Node<span>Verse</span></div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">F&Q</a></li>
+            
+        </ul>
+        <button class="nav-btn" onclick="location.href='learnMore.html'">Learn More</button>
+    </nav>
+
+    <header class="hero">
+        <h1 class="main-title">Linked List Visualizer</h1>
+        <p class="subtitle">Demystifying Linked Lists through real-time visualization. Watch logic in motion, step-by-step.</p>
+    </header>
+
+    <section class="selection-area">
+        <div class="card" onclick="location.href='singly_ll.html'">
+            <div class="card-glow"></div>
+            <div class="animation-box">
+                <div class="node-ani"></div>
+                <div class="arrow-ani">→</div>
+            </div>
+            <h3>Singly Linked List</h3>
+            <p>One-way data flow using single next pointers.</p>
+        </div>
+
+        <div class="card" onclick="location.href='doubly_ll.html'">
+            <div class="card-glow"></div>
+            <div class="animation-box">
+                <div class="arrow-ani">←</div>
+                <div class="node-ani"></div>
+                <div class="arrow-ani">→</div>
+            </div>
+            <h3>Doubly Linked List</h3>
+            <p>Bidirectional navigation with prev and next pointers.</p>
+        </div>
+
+       <div class="card" onclick="location.href='circular_ll.html'">
+            <div class="card-glow"></div>
+            <div class="animation-box">
+                <div class="node-ani circular"></div>
+            </div>
+            <h3>Circular Linked List</h3>
+            <p>Endless traversal with tail pointing back to head.</p>
+        </div>
+    </section>
+    
+
+
+
+
+</body>
+</html>
