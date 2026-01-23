@@ -95,11 +95,11 @@ function clearAll() {
     document.getElementById('code-sidebar-content').innerHTML = "<p>// Select an operation</p>";
 }
 async function addNode(val) {
-    // 1. Frontend එකේ list එක update කරනවා (Visuals සඳහා)
+    
     myList.insertAtTail(val); 
     renderList();
 
-    // 2. ඒ අගයම Backend එකටත් යවනවා (RAM එකේ save වෙන්න)
+  
     await fetch(`${API_BASE_URL}/api/doubly/add`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
